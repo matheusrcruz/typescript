@@ -1,5 +1,6 @@
 export class Negociacoes {
     constructor() {
+        //Sugar Sintaxe para generic
         this.negociacoes = [];
     }
     adicionar(negociacao) {
