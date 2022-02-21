@@ -1,13 +1,17 @@
+import { Negociacoes } from "../models/negociacoes.js";
 import { Negociacao } from "./../models/negociacao.js";
 export class NegociacaoController {
     constructor() {
+        this.negocicoes = new Negociacoes();
         this.inputData = document.querySelector("#data");
         this.inputQuantidade = document.querySelector("#quantidade");
         this.inputValor = document.querySelector("#valor");
     }
     adiciona() {
         const negociacao = this.criaNegociacao();
-        console.log(negociacao);
+        this.negocicoes.adicionar(negociacao);
+        this.negocicoes.lista().pop();
+        console.log(this.negocicoes.lista());
         this.limparFormulario();
     }
     //Tipa o metodo para não cair na pegadinha de errar o retorno
