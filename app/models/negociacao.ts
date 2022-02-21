@@ -1,7 +1,7 @@
 export class Negociacao{
     /*
-        Em typescript, Se vc deixar private no construtor 
-        por deibaixo dospanos o Typescript cria atributo de suas asinaturas privadas
+        Em typescript, se vc deixar private no construtor 
+        por de baixo dos panos, o Typescript cria atributo de suas asinaturas privadas
         Faz a atribuição  
     */
   
